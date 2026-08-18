@@ -1,0 +1,147 @@
+/* Default CSS */
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+/* Top Nav */
+.top-nav {
+    background: #0C3C5E;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.top-nav a {
+    color: #0C3C5E;
+    background: white;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.top-nav a:hover {
+    background: #0C3C5E;
+    color: white;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+
+/* Header CSS */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.main-nav .quick-contact {
+    display: flex;
+    gap: 24px;
+}
+
+.main-nav .quick-contact .quick-question,
+.main-nav .quick-contact .whatsapp {
+    text-align: right;
+}
+
+.main-nav .quick-contact h4 {
+    color: #0C3C5E;
+
+}
+
+.main-nav .quick-contact h4 span {
+    color: #C65204;
+}
+
+.main-nav .quick-contact a {
+    text-decoration: none;
+    color: #0C3C5E;
+}
+
+.main-nav .quick-contact a:hover {
+    text-decoration: underline;
+}
+
+.main-nav .quick-contact .whatsapp a {
+    font-size: 24px;
+}
+
+.main-nav .quick-contact .whatsapp i {
+    color: green;
+}
+
+.header-logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.main-menu {
+    background: #0C3C5E;
+    padding: 16px 0;
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.main-menu .sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #0C3C5E;
+    color: white;
+    display: none;
+}
+
+.main-menu li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.main-menu i {
+    color: white;
+}
+
+.main-menu li:hover i {
+    rotate: 180deg;
+    transition: 0.3s;
+}
+
+/* Hero/Banner Section */
+.hero-section {
+    position: relative;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.hero-section .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-section .hero-content i {
+    color: #C65204;
+}
