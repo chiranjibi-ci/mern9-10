@@ -247,6 +247,12 @@ h1 {
 
 .featured-trips .package-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.featured-trips .package-wrapper h2 {
+    padding: 0 16px
 }
 
 .featured-trips .package-wrapper h2 a {
@@ -255,6 +261,18 @@ h1 {
 }
 
 .featured-trips .package-wrapper .item {
+    width: calc(33.33% - 18px);
+    border: 1px solid red;
+
+}
+
+.featured-trips .package-wrapper .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.featured-trips .package-wrapper .image-wrapper {
     position: relative;
 }
 
@@ -264,6 +282,10 @@ h1 {
     right: 12px;
     display: flex;
     gap: 12px;
+}
+
+.featured-trips .package-wrapper .item .departure:hover {
+    cursor: pointer;
 }
 
 .featured-trips .package-wrapper .item .departure p {
@@ -284,6 +306,26 @@ h1 {
     background: #0C3C5E;
 }
 
+.featured-trips .package-wrapper .item .price {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    padding: 20px;
+    background: #0C3C5E;
+    color: white;
+}
+
+.featured-trips .package-wrapper .item .review {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+}
+
+.featured-trips .package-wrapper .item .review i {
+    color: #C65204;
+}
+
 .featured-trips .package-wrapper .item h2 a:hover {
     text-decoration: underline;
     color: #C65204;
@@ -292,6 +334,7 @@ h1 {
 .featured-trips .package-wrapper .item .info {
     display: flex;
     justify-content: space-between;
+    padding: 0 16px;
 }
 
 .featured-trips .package-wrapper .item .info p {
@@ -301,4 +344,44 @@ h1 {
 .featured-trips .package-wrapper .item .info p i {
     font-size: 24px;
     color: #0C3C5E;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: none;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper:hover .cta {
+    display: block;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper .cta .book-now,
+.featured-trips .package-wrapper .item .image-wrapper .cta .learn-more {
+    padding: 12px 16px;
+    border: 1px solid #2AC699;
+    color: white;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper .cta .book-now {
+    background: #0C3C5E;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper .cta .learn-more {
+    background: #C65204;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper .cta .book-now:hover {
+    background: #C65204;
+}
+
+.featured-trips .package-wrapper .item .image-wrapper .cta .learn-more:hover {
+    background: #0C3C5E;
 }
