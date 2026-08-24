@@ -385,3 +385,67 @@ h1 {
 .featured-trips .package-wrapper .item .image-wrapper .cta .learn-more:hover {
     background: #0C3C5E;
 }
+
+.tripofmonth {
+    text-align: center;
+    background: #0C3C5E;
+    color: white;
+    padding: 64px 0;
+}
+
+.tripofmonth h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #C65204;
+    padding: 12px 16px;
+    width: fit-content;
+    margin: auto;
+}
+
+.tripofmonth img {
+    width: 1000px;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container .info {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: flex;
+    gap: 24px;
+}
+
+.img-container .info .info-item {
+    display: flex;
+    align-items: center;
+    border-right: 1px dotted #fff;
+}
+
+.img-container .info .info-item:last-child {
+    border-right: none;
+}
+
+.img-container .info .info-item h3,
+.img-container .info .info-item h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.img-container .info .info-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.table thead tr {
+    background: grey;
+}
+
+.table tbody tr:nth-child(2n+1) {
+    background: #cfcfcf;
+}
