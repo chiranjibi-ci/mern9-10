@@ -449,3 +449,26 @@ h1 {
 .table tbody tr:nth-child(2n+1) {
     background: #cfcfcf;
 }
+
+.form-example input[type=text],
+.form-example input[type=password] {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-example input[type=text]:focus {
+    border: 3px solid green;
+}
+
+.includes ul {
+    list-style: none;
+}
+
+
+.includes ul li:before {
+    content: '\f14a';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+
+}
