@@ -1,0 +1,52 @@
+html,
+body {
+    overflow-x: clip;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .etr-container {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .etr-container {
+        padding: 0 16px;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main-nav .quick-contact {
+        display: none;
+    }
+
+    .main-menu {
+        display: none;
+    }
+}
+
+/* 576
+768
+991
+1200
+1440 */
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}

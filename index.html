@@ -19,8 +19,11 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
 </head>
 
 <body>
@@ -46,6 +49,7 @@
                             9876543210</a>
                     </div>
                 </div>
+                <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </div>
         </div>
         <ul class="main-menu">
@@ -66,6 +70,13 @@
             </li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
     </header>
     <main>
         <section class="hero-section">
@@ -123,7 +134,7 @@
                 <h1>Our Featured Trips</h1>
 
                 <div class="package-wrapper">
-                    <div class="item">
+                    <div class="item animate__animated animate__fadeIn">
                         <div class="image-wrapper">
                             <a href="#">
                                 <img src="./assets/img/trekking.jpg" alt="">
@@ -149,7 +160,7 @@
                             <p><i class="fa-solid fa-chart-area"></i> 4130m</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item animate__animated animate__flip">
                         <div class="image-wrapper">
                             <a href="#">
                                 <img src="./assets/img/trekking.jpg" alt="">
@@ -318,6 +329,10 @@
                 </table>
             </div>
         </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i0_eqL5q7jk?autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <section class="form-example">
             <div class="etr-container">
                 <form>
@@ -358,15 +373,18 @@
                 </form>
             </div>
         </section>
-        <section class="includes">
+        <section class="includes" data-aos="fade-down">
             <h2>Includes</h2>
             <ul>
-                <li> Assistance Guide: Group size more than 6 trekkers</li>
-                <li> Trekking Equipment: Duffle bag and Sleeping bag (After trek return to company)</li>
-                <li> After the successful trip, Everest Trekking Routes will Provide an Adventure Certificate.</li>
-                <li>Arrangement of Emergency Helicopter service which will be paid for by your Travel insurance company.
+                <li data-aos="fade-down-right"> Assistance Guide: Group size more than 6 trekkers</li>
+                <li data-aos="fade-up-left"> Trekking Equipment: Duffle bag and Sleeping bag (After trek return to
+                    company)</li>
+                <li data-aos="flip-left"> After the successful trip, Everest Trekking Routes will Provide an Adventure
+                    Certificate.</li>
+                <li data-aos="flip-right">Arrangement of Emergency Helicopter service which will be paid for by your
+                    Travel insurance company.
                 </li>
-                <li>All government taxes and Services are charged.</li>
+                <li data-aos="flip-up">All government taxes and Services are charged.</li>
             </ul>
         </section>
 
@@ -388,7 +406,10 @@
     <footer>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script>
+        AOS.init();
         jQuery(document).ready(function () {
             $(".owl-carousel").owlCarousel({
                 loop: true,
