@@ -25,9 +25,7 @@ body {
     .hamburger {
         display: block;
     }
-}
 
-@media only screen and (max-width: 991px) {
     .main-nav .quick-contact {
         display: none;
     }
@@ -35,7 +33,69 @@ body {
     .main-menu {
         display: none;
     }
+
+    .hero-section .hero-content h1,
+    .background-image-example h1 {
+        font-size: 40px;
+    }
+
+    .about-us {
+        flex-wrap: wrap;
+        padding: 200px 0;
+        margin-top: 160px;
+    }
+
+    .about-us .image-container {
+        width: 100%;
+
+    }
+
+    .about-us .image-container .first-image {
+        bottom: 0;
+        width: 400px;
+        height: auto;
+    }
+
+    .about-us .image-container .second-image {
+        bottom: -10px;
+        width: 400px;
+        height: auto;
+        top: unset;
+        left: 10px;
+    }
+
+
+    .about-us .content {
+        width: 100%;
+        position: relative;
+    }
+
+    .featured-trips .package-wrapper .item {
+        width: calc(50% - 14px);
+    }
 }
+
+@media only screen and (max-width: 575px) {
+
+    .hero-section .hero-content h1,
+    .background-image-example h1 {
+        font-size: 24px;
+    }
+
+    .about-us .image-container .first-image,
+    .about-us .image-container .second-image {
+        width: 300px;
+    }
+
+    .featured-trips .package-wrapper .item {
+        width: 100%;
+    }
+
+    .table {
+        overflow-x: scroll;
+    }
+}
+
 
 /* 576
 768
@@ -50,3 +110,17 @@ body {
 @media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 992px) {}
+
+
+/* media query
+min-width
+max-width */
+
+/* font-size
+line-height
+letter-spacing
+margin
+padding
+border-radius
+if img (height, width)
+object fit property */
