@@ -1,12 +1,23 @@
 /* Top Nav */
+@use "./variable" as vars;
+@use "./default";
+@use "./mixin" as *;
+
+
+// Variable defined -> link to main file
+// multiple files created and linked to main file
+// mixin created and used in main file
+// css generated in main file and linked to index.html
+
 
 .top-nav {
-    background: #0C3C5E;
+    background: vars.$primary-color;
     color: white;
     text-align: center;
     padding: 12px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: vars.$primary-font;
     font-size: 14px;
+    @include flex;
 
     a {
         color: #0C3C5E;
@@ -19,7 +30,7 @@
             background: #0C3C5E;
             color: white;
             transition: 0.3s;
-            border: 1px solid white;
+            border: 1px solid vars.$color-white;
         }
     }
 }
@@ -310,8 +321,6 @@
         }
     }
 }
-
-
 
 .featured-trips .package-wrapper .item .review i {
     color: #C65204;
